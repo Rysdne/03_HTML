@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Wave</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        span {
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+        }
+
+        #page {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+        }
+
+        .header {
+            width: 1000px;
+            height: 200px;
+            background-color: steelblue;
+            padding: 0 100px;
+            position: relative;
+        }
+
+        .h_logo {
+            width: 250px;
+            margin-top: 30px
+        }
+
+        .h_m_list {
+            width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            bottom: 0;
+            background-color: lightsteelblue;
+            position: absolute;
+            font-size: 0.9rem;
+        }
+
+        .h_m_list>li {
+            width: 100px;
+            color: white;
+
+            text-align: center;
+            float: left;
+        }
+
+        .h_m_list>li:first-child {
+            background-color: white;
+            color: dimgray;
+
+        }
+
+        .h_m_list>li:hover {
+            background-color: dodgerblue;
+            color: white;
+
+        }
+
+        .h_pic_wave {
+            width: 250px;
+            position: absolute;
+            right: 57px;
+            bottom: 0;
+
+        }
+
+
+        .contents {
+            width: 1000px;
+            height: 625px;
+            margin: 0 100px;
+        }
+
+        .article {
+            width: 800px;
+            height: 600px;
+            float: left;
+            background-color: white;
+
+        }
+
+        .c_aside {
+            width: 200px;
+            height: 600px;
+            background-color: white;
+            float: left;
+        }
+
+        .c_articles {
+            width: 750px;
+            height: 150px;
+            margin: 0 25px;
+            margin-top: 25px;
+            padding-top: 25px;
+            background-color: white;
+            border-top: 1px dotted whitesmoke;
+
+        }
+
+        .c_articles:first-child {
+            padding-top: 0;
+            border-top: 0;
+
+        }
+
+        .c_a_pics {
+            width: 375px;
+            float: left;
+        }
+
+        .c_a_note {
+            width: 375px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .c_a_n_title {
+            padding-bottom: 5px;
+            font-size: 18pt;
+            color: royalblue;
+        }
+
+        .c_a_n_text {
+            padding-left: 5px;
+            font-size: 0.9rem;
+            color: darkgray;
+        }
+
+        .c_as_note {
+            width: 100%;
+            margin: 25px 0;
+
+        }
+
+        .c_as_n_title {
+            color: royalblue;
+            font-size: 18pt;
+            margin-bottom: 10px;
+
+        }
+
+        .c_as_n_list>li {
+            padding-left: 10px;
+            border-left: 4px solid lightgray;
+            color: darkgray;
+
+        }
+
+        .c_as_n_list>li:hover {
+            color: cadetblue;
+            border-color: cadetblue;
+            font-weight: bold;
+
+        }
+
+        .bottom {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+
+        }
+
+        .b_icon {
+            width: 300px;
+            height: 100px;
+            margin-left: 100px;
+            color: gray;
+            background-color: ;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .b_icon>h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 50pt;
+            margin-bottom: -15px;
+        }
+
+        .b_information {
+            width: 700px;
+            height: 100px;
+            float: left;
+            position: relative;
+        }
+
+        .b_info {
+            padding-top: 10px;
+            width: 450px;
+            position: absolute;
+            right: 0;
+            color: white;
+
+        }
+
+        .b_info>li {
+            padding-left: 50px;
+            float: left;
+
+        }
+
+        .b_info>li:first-child {
+            padding-left: 0;
+        }
+
+        .b_in_list {
+            margin-top: 10px;
+            font-size: 0.7rem;
+            color: darkgray;
+        }
+
+        .b_in_subimg li {
+            float: left;
+            width: 30px;
+            margin: 5px;
+            text-indent: -99999px;
+        }
+
+        .b_in_subimg a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(images/icon-sprite.png);
+
+        }
+
+        .b_in_subimg li a.s01 {
+            background-position: left top;
+
+        }
+
+        .b_in_subimg li a.s02 {
+            background-position: center top;
+
+        }
+
+        .b_in_subimg li a.s03 {
+            background-position: right top;
+
+        }
+
+        .b_in_subimg li a.s01:hover {
+            background-position: left bottom;
+
+        }
+
+        .b_in_subimg li a.s02:hover {
+            background-position: center bottom;
+
+        }
+
+        .b_in_subimg li a.s03:hover {
+            background-position: right bottom;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="page">
+        <header class="header">
+            <img src="images/header-logo.png" alt="wave" class="h_logo">
+            <nav class="h_menu">
+                <ul class="h_m_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="images/wave.png" alt="파도" class="h_pic_wave">
+        </header>
+        <section class="contents">
+            <article class="article">
+                <div class="c_articles">
+                    <img src="images/section01.png" alt="죠스" class="c_a_pics">
+                    <div class="c_a_note">
+                        <h3 class="c_a_n_title">Jaws</h3>
+                        <p class="c_a_n_text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque eius porro corporis sed quaerat dignissimos, aut voluptates et quo delectus enim laudantium magni inventore, repellat ipsa iusto recusandae autem.
+                        </p>
+                    </div>
+                </div>
+                <div class="c_articles">
+                    <img src="images/section02.png" alt="파타" class="c_a_pics">
+                    <div class="c_a_note">
+                        <h3 class="c_a_n_title">Giant Wave</h3>
+                        <p class="c_a_n_text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis odio deserunt dolores exercitationem quos quo, dignissimos itaque velit, eum voluptas suscipit minima mollitia voluptates porro doloremque fuga obcaecati non facere!
+                        </p>
+                    </div>
+                </div>
+                <div class="c_articles">
+                    <img src="images/section03.png" alt="매버릭" class="c_a_pics">
+                    <div class="c_a_note">
+                        <h3 class="c_a_n_title">Mavericks</h3>
+                        <p class="c_a_n_text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ratione ducimus nulla eos culpa temporibus praesentium dolor, quam vel architecto, iusto repellat quasi, accusantium fugiat facilis explicabo nobis nihil unde.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <aside class="c_aside">
+                <div class="c_as_note">
+                    <h3 class="c_as_n_title">
+                        Creative fields
+                    </h3>
+                    <ul class="c_as_n_list">
+                        <li>Graphic Design</li>
+                        <li>Web Development</li>
+                        <li>Motion Graphic</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+        <div class="bottom">
+            <div class="b_icon">
+                <h1>wave</h1>
+                <span>THE RECORDS</span>
+            </div>
+            <div class="b_information">
+                <ul class="b_info">
+                    <li>
+                        <h3>About us</h3>
+                        <ul class="b_in_list">
+                            <li>Information</li>
+                            <li>Team</li>
+                            <li>About</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Creative Fields</h3>
+                        <ul class="b_in_list">
+                            <li>Graphic Design</li>
+                            <li>Web Develop</li>
+                            <li>Motion Graphic</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Social Network</h3>
+                        <ul class="b_in_list b_in_subimg">
+                            <li><a href="#" class="s01">트위터 아이콘</a></li>
+                            <li><a href="#" class="s02">페이스북 아이콘</a></li>
+                            <li><a href="#" class="s03">핀터레스트 아이콘</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>

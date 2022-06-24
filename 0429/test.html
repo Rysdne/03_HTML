@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+
+        #page {
+            margin: 0 auto;
+            width: 1000px;
+            height: 1150px;
+            background-color: white;
+            border: 2px solid #999;
+
+        }
+
+        .header {
+            width: 100%;
+            height: 150px;
+
+        }
+
+
+        .h_iconbox {
+            width: 350px;
+            height: 150px;
+            float: left;
+
+        }
+
+        .h_ib_icon {
+            width: 300px;
+            padding: 50px 25px;
+
+
+        }
+
+        .h_nav {
+            width: 650px;
+            height: 150px;
+            float: left;
+            position: relative;
+
+        }
+
+        .h_n_list {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: gray;
+            font-weight: bold;
+            font-size: 15pt;
+
+        }
+
+        .h_n_list>li {
+            list-style: none;
+            padding: 20px 50px;
+            float: left;
+
+
+        }
+
+
+
+        .contents {
+            width: 100%;
+            height: 800px;
+
+        }
+
+        .c_img {
+            width: 100%;
+            height: 350px;
+            background-image: url('images/c_img.PNG');
+            position: relative;
+        }
+
+
+        .c_i_textbox {
+            width: 500px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            border-radius: 10px;
+            font-size: 22pt;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        .c_i_textbox>p {
+            margin-top: 8px;
+        }
+
+        .daewoo {
+            font-size: 24pt;
+            color: royalblue;
+            font-weight: bold;
+
+
+        }
+
+
+
+        .c_article {
+            width: 100%;
+            height: 450px;
+            background-color: white;
+
+        }
+
+        .c_a_artbox {
+            width: 100%;
+            height: 250px;
+            margin-top: 80px;
+            display: flex;
+
+
+        }
+
+        .c_a_a_title {
+            width: 300px;
+            padding-left: 10px;
+            font-size: 26px;
+            border-bottom: 1px solid black;
+        }
+
+        .c_a_artbox>li {
+            padding-right: 35px;
+            list-style: none;
+            float: left;
+
+        }
+
+        .c_a_artbox>li:last-child {
+            padding-right: 0;
+        }
+
+        .c_a_a01 {
+            padding-left: 35px;
+            list-style: disc;
+
+        }
+
+        .c_a_else {
+            list-style: none;
+        }
+        .c_a_a02_icon{
+            margin-top: 10px;
+            width: 305px;
+            height: 50px;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: gray;
+            line-height: 50px;
+        }
+        
+        
+        
+        .icons{
+            padding: 10px;
+            width: 30px;
+            float: left;
+        }
+        
+        
+        
+        .right {
+            float: right;
+            margin-right: 10px;
+            line-height: 45px;
+            font-size: 30px;
+            
+        }
+
+        .banner{
+            width: 310px;
+            height: 180px;
+            margin-top: 10px;
+            
+        }
+        
+        
+        .bottom {
+            width: 100%;
+            height: 200px;
+            background-color: darksalmon;
+        }
+
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div id="page">
+        <header class="header">
+            <div class="h_iconbox">
+                <img src="images/h_i_pic.png" alt="아이콘" class="h_ib_icon">
+            </div>
+            <nav class="h_nav">
+                <ul class="h_n_list">
+                    <li>컴퓨터학원소개</li>
+                    <li>커피큘럼 소개</li>
+                    <li>커뮤니티</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contents">
+            <div class="c_img">
+                <div class="c_i_back">
+
+                    <div class="c_i_textbox">
+                        <p>한국브랜드선호도 1위<br><span class="daewoo">
+                                대우직업능력개발원</span></p>
+                    </div>
+                </div>
+
+            </div>
+            <article class="c_article">
+                <ul class="c_a_artbox">
+                    <li>
+                        <h3 class="c_a_a_title">수강후기</h3>
+                        <ul class="c_a_a01">
+                            <li>Lorem ipsum dolor sit amet,</li>
+                            <li>consectetur adipisicing elit.</li>
+                            <li>Explicabo nemo aut mollitia ad</li>
+                            <li>error fuga repellat velit sapiente,</li>
+                            <li>illo consectetur rem quidem nostrum</li>
+                            <li>culpa ipsam repudiandae!</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="c_a_a_title">학원후기</h3>
+                        <ul class="c_a_else">
+                            <li>
+                                <div class="c_a_a02_icon"><img src="images/01.png" alt="" class="icons"><p class="a02">수강신청<span class="right">&#62</span></p>
+                                </div>
+                            </li>
+                            <li><div class="c_a_a02_icon"><img src="images/02.png" alt="" class="icons"><p class="a02">커리큘럼<span class="right">&#62</span></p>
+                                </div></li>
+                            <li><div class="c_a_a02_icon"><img src="images/03.png" alt="" class="icons"><p class="a02">고객센터<span class="right">&#62</span></p>
+                                </div></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h3 class="c_a_a_title">학원안내</h3>
+                        <ul class="c_a_else">
+                            <li><img src="images/11.png" alt="01" class="banner"></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </article>
+
+        </section>
+
+
+
+        <footer class="bottom">
+            <div class="b_text">
+                <ul class="b_t_list">
+                    <li>법적고지</li>
+                    <li>개인정보취급방침</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+
+
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .header {
+            width: 1500px;
+            height: 300px;
+            margin: 10px auto;
+            border: 1px solid lightgray;
+        }
+
+        .toplayer {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            line-height: 50px;
+        }
+
+        .h_t_startpage {
+            width: 500px;
+            height: 50px;
+            padding-left: 30px;
+            line-height: 50px;
+            font-weight: bold;
+            color: darkgray
+        }
+
+        .small {
+            font-size: 1pt;
+        }
+
+        .midlayer {
+            width: 100%;
+            height: 160px;
+            border-bottom: 2px solid lightgray;
+        }
+
+        .m_icon {
+            width: 200px;
+            height: 160px;
+            background-color: white;
+            float: left;
+            position: relative;
+        }
+
+        .daum {
+            width: 150px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .m_search {
+            width: 800px;
+            height: 160px;
+            background-color: white;
+            float: left;
+        }
+
+        .m_s_bar {
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            position: relative;
+
+        }
+
+        .searchbar {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            border: 1px solid dodgerblue;
+            float: left;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50px;
+        }
+
+        .m_s_b_input {
+            border: 0pt;
+            width: 650px;
+            height: 50px;
+        }
+
+        .m_s_b_icon {
+            width: 50px;
+        }
+
+        .m_s_tag {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            position: relative;
+        }
+
+        .m_s_t_list {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            float: left;
+        }
+
+        .m_s_t_list>li {
+            float: left;
+            margin-right: 15px;
+            color: darkgray;
+        }
+
+        .m_s_t_list>li:last-child {
+            margin-right: 0px;
+        }
+
+        .m_s_t_butt {
+            float: left;
+            position: absolute;
+            right: 0;
+
+        }
+
+        .m_s_t_b_common {
+            border: 1px solid lightgray;
+
+        }
+
+        .m_banner {
+            width: 500px;
+            height: 160px;
+            background-color: white;
+            float: left;
+            position: relative;
+        }
+
+        .m_b_emdqhs {
+            width: 300px;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            padding-right: 10px;
+        }
+
+        .botlayer {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            padding: 10px, 0;
+        }
+
+        .b_menu {
+            width: 1000px;
+            height: 50px;
+            background-color: white;
+            float: left;
+
+        }
+
+        .b_m_list {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            line-height: 50px;
+            font-weight: bold;
+
+        }
+
+        .b_m_list>li {
+            padding-left: 30px;
+            float: left;
+        }
+
+        .b_m_list>li:last-child {
+            padding-right: 0px;
+        }
+
+        .b_today {
+            width: 400px;
+            height: 50px;
+            background-color: white;
+            float: right;
+
+        }
+
+        .b_t_list {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            font-size: 15pt;
+
+        }
+
+        .b_t_list>li {
+            float: right;
+
+        }
+
+        .li1 {
+            padding-right: 25px;
+
+        }
+
+        .li2 {
+            padding-right: 5px;
+
+        }
+
+        .li3 {
+            padding-right: 5px;
+
+        }
+
+        .li4 {}
+
+        .f_bold {
+            font-weight: bold;
+        }
+
+        .sunny {
+            width: 40px;
+        }
+
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="toplayer">
+            <div class="h_t_startpage">
+                <p class="darkgray">
+                    다음을 시작페이지로 <span class="small">&#9654</span>
+                </p>
+            </div>
+        </div>
+        <div class="midlayer">
+            <div class="m_icon">
+                <img src="images/daum.jpg" alt="다음" class="daum">
+            </div>
+            <div class="m_search">
+                <div class="m_s_bar">
+
+                    <table class="searchbar">
+                        <tr>
+                            <td><input type="text" class="m_s_b_input"></td>
+                            <td class="m_s_b_icon"><img src="images/keyboard.jpg" alt="키보드" class="m_s_b_icon"></td>
+                            <td><img src="images/scope.jpg" alt="돋보기" class="m_s_b_icon"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="m_s_tag">
+                    <ul class="m_s_t_list">
+                        <li>코로나19 발생현황</li>
+                        <li>라스 윤은혜</li>
+                        <li>cctv설치가격</li>
+                        <li>신랑수업 박태환</li>
+                        <li>쥬얼리쇼핑몰</li>
+                    </ul>
+                    <div class="m_s_t_butt">
+                        <button class="m_s_t_b_common lightgray">&nbsp&#60&nbsp</button>
+                        <button class="m_s_t_b_common lightgray">&nbsp&#62&nbsp</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="m_banner">
+                <img src="images/emdqhs.jpg" alt="등본" class="m_b_emdqhs">
+            </div>
+        </div>
+        <div class="botlayer">
+            <div class="b_menu">
+                <ul class="b_m_list">
+                    <li>카페</li>
+                    <li>메일</li>
+                    <li>뉴스</li>
+                    <li>지도</li>
+                    <li>증권</li>
+                    <li>쇼핑</li>
+                    <li>카카오TV</li>
+                    <li>웹툰</li>
+                    <li>캘린더</li>
+                    <li>브런치</li>
+                    <li>사전</li>
+                    <li>게임</li>
+                    <li>같이가치</li>
+                    <li>더보기&#8744</li>
+                </ul>
+            </div>
+
+            <div class="b_today">
+                <ul class="b_t_list">
+
+                    <li class="li4">19<span class="f_bold">&#8451</span> &#8744</li>
+                    <li class="li3"><img src="images/sunny.jpg" alt="쨍" class="sunny"></li>
+                    <li class="li2 f_bold">충청북도</li>
+                    <li class="li1 f_bold">04. 28. (목)</li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>일기예보</title>
+    <style>
+        caption {
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+
+
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+            align-content: center;
+            font-size: 24px;
+        }
+
+        th {
+            font-weight: bold;
+
+        }
+
+        .bgred {
+            background-color: orangered;
+        }
+
+        .bggry {
+            background-color: lightgray;
+        }
+
+        .white {
+            color: white;
+
+        }
+
+        .red {
+            color: orangered;
+
+        }
+
+        .icon {
+            width: 70px;
+            align-content: center;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <table width="800" height="250" align="center">
+        <caption>일기예보</caption>
+        <tr height="50">
+            <th rowspan="2" width="100">지역</th>
+            <th colspan="2">27일(목)</th>
+            <th colspan="2">28일(금)</th>
+            <th colspan="2">29일(토)</th>
+        </tr>
+        <tr height="50">
+            <td class="bgred white">오전</td>
+            <td class="bggry white">오후</td>
+            <td class="bgred white">오전</td>
+            <td class="bggry white">오후</td>
+            <td class="bgred white">오전</td>
+            <td class="bggry white">오후</td>
+
+        </tr>
+
+        <tr>
+            <th width="100"><span class="red">서울</span><br>경기도</th>
+
+            <td><img src="images/sunny.jpg" class="icon" alt="맑음"></td>
+            <td><img src="images/sunny.jpg" class="icon" alt="맑음"></td>
+            <td><img src="images/sunny.jpg" class="icon" alt="맑음"></td>
+
+            <td><img src="images/rainy.jpg" class="icon" alt="우천"></td>
+            <td><img src="images/rainy.jpg" class="icon" alt="우천"></td>
+            <td><img src="images/rainy.jpg" class="icon" alt="우천"></td>
+
+        </tr>
+
+        <tr>
+            <th width="100">제주도</th>
+
+            <td><img src="images/sunny.jpg" class="icon" alt="맑음"></td>
+            <td><img src="images/sunny.jpg" class="icon" alt="맑음"></td>
+            <td><img src="images/sunny.jpg" class="icon" alt="맑음"></td>
+
+            <td><img src="images/rainy.jpg" class="icon" alt="우천"></td>
+            <td><img src="images/rainy.jpg" class="icon" alt="우천"></td>
+            <td><img src="images/rainy.jpg" class="icon" alt="우천"></td>
+
+        </tr>
+
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+</body></html>

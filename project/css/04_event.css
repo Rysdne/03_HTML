@@ -1,0 +1,409 @@
+/*====================================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*====================================*/
+#wrap {
+    width: 1000px;
+    height: 2000px;
+    background-color: white;
+    margin: 0 auto;
+    font-size: 30px;
+    border: 2px solid lightgray;
+}
+
+/*====================================*/
+.header {
+    width: 100%;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+
+.h_logo {
+    width: 250px;
+    height: 200px;
+    background-color: cornflowerblue;
+    float: left;
+    position: relative;
+}
+
+.h_l_pic {
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.h_info {
+    width: 750px;
+    height: 200px;
+    float: left;
+}
+
+.h_greeting {
+    width: 600px;
+    height: 200px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.h_greeting p {
+    font-size: 30pt;
+    font-weight: bold;
+    color: white;
+}
+
+.h_config {
+    width: 150px;
+    height: 200px;
+    float: left;
+}
+
+.h_menuicon {
+    width: 100px;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+/*====================================*/
+.section {
+    width: 100%;
+    height: 1500px;
+    background-color: lightgray;
+}
+
+.s_event {
+    width: 100%;
+    height: 1250px;
+
+}
+
+.s_i_menu {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    position: relative;
+
+}
+
+.s_i_m_list {
+    width: 950px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.s_i_m_list li {
+    width: 465px;
+    height: 100px;
+    line-height: 100px;
+    background-color: white;
+    margin-left: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+
+}
+
+.s_i_m_list li:hover {
+    background-color: aliceblue;
+}
+
+.s_i_m_list li:first-child {
+    margin-left: 0;
+
+}
+
+.s_i_m_list li.s_choose {
+    box-sizing: border-box;
+    color: cornflowerblue;
+    font-weight: bold;
+    border-bottom: 2px solid cornflowerblue;
+
+}
+
+/*====================================*/
+.s_e_01_menu {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    background-color: lightgray;
+    box-sizing: border-box;
+
+}
+
+.s_e_01_m_list {
+    width: 900px;
+    height: 47px;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+.s_e_01_m_list li {
+    width: 650px;
+    height: 50px;
+    line-height: 50px;
+    background-color: steelblue;
+    box-sizing: border-box;
+    border-left: 3px solid lightgray;
+    border-bottom: 4px solid lightgray;
+    float: left;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+.s_e_01_m_list li:first-child {
+    width: 250px;
+    border-left: 0;
+}
+
+.s_e_01_b_list {
+    width: 1000px;
+}
+
+
+.s_e_01_b_list li {
+    width: 1000px;
+    height: 250px;
+
+}
+
+
+.s_e_01_b_list > li:hover {
+    background-color: cadetblue;
+}
+
+.s_e_01_b_l_box {
+    width: 900px;
+    height: 250px;
+    margin: 0 auto;
+    border-bottom: 4px solid lightgray;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+
+.s_e_01_b_l_b_event li {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+.s_e_01_b_l_box_event li:first-child {
+    width: 250px;
+}
+
+.events {
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+.texts {
+    width: 600px;
+    height: 200px;
+    margin: 25px;
+}
+
+.s_01_box {
+    width: 900px;
+    height: 1075px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: white;
+
+}
+
+.s_01_b_picture01 {
+    margin: 0 50px;
+    margin-top: 50px;
+    width: 800px;
+
+
+}
+
+.s_01_b_picture02 {
+    margin: 0 50px;
+    margin-top: 50px;
+    width: 800px;
+}
+
+
+/*====================================*/
+
+.s_e_02_menu {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    background-color: lightgray;
+    box-sizing: border-box;
+
+}
+
+.s_e_02_m_list {
+    width: 900px;
+    height: 47px;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+.s_e_02_m_list li {
+    width: 650px;
+    height: 50px;
+    line-height: 50px;
+    background-color: steelblue;
+    box-sizing: border-box;
+    border-left: 3px solid lightgray;
+    border-bottom: 4px solid lightgray;
+    float: left;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+.s_e_02_m_list li:first-child {
+    width: 250px;
+    border-left: 0;
+}
+
+.s_e_02_b_list {
+    width: 1000px;
+}
+
+
+.s_e_02_b_list li {
+    width: 1000px;
+    height: 250px;
+
+}
+
+
+.s_e_02_b_list > li:hover {
+    background-color: cadetblue;
+}
+
+.s_e_02_b_l_box {
+    width: 900px;
+    height: 250px;
+    margin: 0 auto;
+    border-bottom: 4px solid lightgray;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+
+.s_e_02_b_l_b_event li {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+.s_e_02_b_l_box_event li:first-child {
+    width: 250px;
+}
+
+.events02 {
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+.texts02 {
+    width: 600px;
+    height: 200px;
+    margin: 25px;
+}
+
+/*====================================*/
+.s_banner {
+    width: 100%;
+    height: 250px;
+    background-color: darkturquoise;
+}
+
+/*====================================*/
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: dimgray;
+}
+
+.f_icon {
+    width: 200px;
+    height: 200px;
+    margin: 25px 25px;
+    float: left;
+    position: relative;
+}
+.f_icon:hover{
+    background-color: darkgray;
+}
+.mainicon_home {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mainicon_event {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.mainicon_shopping {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mainicon_mypage {
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+/*====================================*/
