@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #header {
+            border: 1px solid green;
+        }
+
+        #snb ul {
+            display: flex;
+            justify-content: right;
+            padding: 0;
+            margin: 0;
+            border: 1px solid red;
+        }
+
+        #snb ul li {
+            border-left: 1px solid black;
+            margin: 10px 0;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        #snb ul li:first-child {
+            border-left: 0px;
+        }
+
+        #nav {
+            position: relative;
+        }
+
+        #logo {
+            border: 1px solid yellow;
+            position: absolute;
+            top: 10px;
+            display: flex;
+        }
+
+        #msnb ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            border: 1px solid red;
+        }
+
+        #msnb ul li {
+            border-left: 1px solid black;
+            margin: 10px 0;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        #msnb ul li:first-child {
+            border-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="snb">
+            <ul>
+                <li>LOGIN</li>
+                <li>JOIN</li>
+                <li>MYPAGE</li>
+                <li>CART(0)</li>
+            </ul>
+        </div>
+        <div id="nav">
+            <div id="logo">
+                LOGO
+            </div>
+            <div id="msnb">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>BRANDS</li>
+                    <li>SHOWROOM</li>
+                    <li>SHOP</li>
+                    <li>NEWS</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+
+    </div>
+</body>
+
+</html>

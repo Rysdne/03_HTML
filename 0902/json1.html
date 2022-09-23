@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div></div>
+    <script>
+        let text = '{"name","kim", "age","20"}';
+        let obj = { "name": "kim", "age": "20" };
+
+        // document.querySelector("div").innerHTML = "test";
+        // 객체생성
+        // document.querySelector("div").innerHTML = JSON.parse(text);
+        // document.querySelector("div").innerHTML = JSON.parse(text).name;
+        // document.querySelector("div").innerHTML = JSON.parse(obj).name;
+        document.querySelector("div").innerHTML = (obj).name;
+
+        // // 문자열이므로 JSON 객체를 만들어줘야 함
+        // $.ajax({
+        //     url:"json.txt",
+        //     success:function(result){
+        //     document.querySelector("div").innerHTML=JSON.parse(result).age;
+        //     }
+        // });
+
+        // 자바 배열 Literal Notation 방법
+        [
+            { "firstName": "John", "lastName": "Doe" },
+            { "firstName": "Anna", "lastName": "Smith" },
+            { "firstName": "Peter", "lastName": "Jones" }
+        ]
+
+
+        // // 객체가 아니어서 동작이 안됨
+        // $.ajax({
+        //     url:"json.txt",
+        //     success:function(result){
+        //     document.querySelector("div").innerHTML=JSON.parse(obj).age;
+        //     }
+        // });
+
+        // 배열 형태는 객체가 아님(?)
+        let arr = [10, 20, 30, 40, 50];
+        //alert(arr);
+        let arr1 = new Array();
+        //alert(arr1);
+
+        // Date는 객체임
+        let date = new Date();
+        //alert(date);
+
+        // 이건 객체임
+        //alert(document);
+
+        // 이건 객체
+        let emp = {
+            "employees": [
+                { "firstName": "John", "lastName": "Doe" },
+                { "firstName": "Anna", "lastName": "Smith" },
+                { "firstName": "Peter", "lastName": "Jones" }
+            ]
+        };
+
+        // 이렇게 접근하기 때문
+        // 내부에 선택할 수 있는 내용이 있으면 객체
+        // document.querySelector("div").innerHTML=emb.employees[0].firstName;
+
+        //alert(emp.employees[5].firstName);
+
+
+        let emptxt = '{"employees":[{"firstName":"John", "lastName":"Doe"},{"firstName":"Anna", "lastName":"Smith"},{"firstName":"Peter", "lastName":"Jones"}]}';
+        alert(JSON.parse(emptxt).employees[2].firstName);
+
+
+        // 이게 데이터와 코드가 완전히 분리되는 형태
+        // 실제로 사용하는 형태
+        $.ajax({
+            url: "/json.txt",
+            success: function (result) {
+                var p = JSON.parse(result);
+                document.querySelector("div").innerHTML = '<table border="1"><tr><td>1</td><td>a</td></tr><tr><td>${p.name}</td><td>${p.age}</td></tr></table>';
+            }
+        })
+
+        $.ajax({
+            url: "/table.html",
+            success: function (result) {
+                var p = JSON.parse(result);
+                document.querySelector("div").innerHTML;
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>
